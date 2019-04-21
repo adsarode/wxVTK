@@ -16,8 +16,9 @@
 
 =========================================================================*/
 
-#include <assert.h>
+#include "stdafx.h"
 
+#include <assert.h>
 #include "wxVTKRenderWindowInteractor.h"
 
 //This is needed for vtk 3.1 :
@@ -157,8 +158,8 @@ BEGIN_EVENT_TABLE(wxVTKRenderWindowInteractor, wxWindow)
   EVT_SIZE        (wxVTKRenderWindowInteractor::OnSize)
 END_EVENT_TABLE()
 
-vtkCxxRevisionMacro(wxVTKRenderWindowInteractor, "$Revision$")
-vtkInstantiatorNewMacro(wxVTKRenderWindowInteractor)
+//vtkCxxRevisionMacro(wxVTKRenderWindowInteractor, "$Revision$")
+//vtkInstantiatorNewMacro(wxVTKRenderWindowInteractor)
 
 #if defined(__WXGTK__) && defined(USE_WXGLCANVAS)
 static int wxvtk_attributes[]={
